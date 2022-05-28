@@ -1,45 +1,102 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!---LINKS CSS--->>
+    
     <link rel="stylesheet" href="css/ConfiGeneral.css">
     <link rel="stylesheet" href="css/Escritorio.css">
-
+    <link rel="stylesheet" href="css/Funciones.css">
     <title>Escritorio</title>
+    
 </head>
 <body>
-    
-    <div class="Fondo-escritorio">
-        <img src="https://fondosmil.com/fondo/54336.png" alt="">
+    <div class="Fondo">
+        <img class="segundo" src="https://fondosmil.com/fondo/54336.png" alt="">
+            <div class="Barra-T">
+                <div class="icons">
+                     <!--SECCIÓN DE BOTONES DE BARRA DE TAREAS WINDOWS-->
+                    <div class="windowsIcon" id="windowsIcon" type="button" onclick="Activar();">
+                        <img src="https://img.icons8.com/ios-filled/100/ffffff/windows-logo.png" alt="">
+                    </div>
+                    <div class="windowsIcon2" id="windowsIcon2" type="button" onclick="Desactivar();">
+                        <img src="https://img.icons8.com/ios-filled/100/ffffff/windows-logo.png" alt="">
+                    </div>  
+                </div>
+                     <!--SECCIÓN DE BOTONES DE BARRA DE TAREAS BUSCADOR-->
+                <div class="Lupa" >
+                    <img src="https://img.icons8.com/windows/64/ffffff/search--v1.png" alt="">
+                </div>
+               
+                <!--SECCIÓN DE BOTONES DE BARRA DE TAREAS CARPETA-->
+                <div class="Carpeta" id="Carpeta" type="button" onclick="OpenWindow();">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/File-Explorer-fluent-icon.png" alt="">
+                </div>
+                <div class="CarpetaS" id="CarpetaS" type="button" onclick="CloseWindow();">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/File-Explorer-fluent-icon.png" alt="">
+                </div>   
+            </div> 
 
-
-        <div class="Carpeta1">
-            <img src="https://cdn-icons-png.flaticon.com/512/3516/3516096.png" alt="">
-            
-        </div>
-
-
-        <div class="barra-T">
-            <ol class="SecA">
-              <img src="https://cdn-icons-png.flaticon.com/512/71/71753.png" alt="">
-            </ol>
-            <ol>
-                <img src="http://assets.stickpng.com/images/59cfc4d2d3b1936210a5ddc7.png" alt="">
-            </ol>
-            <ol class="Carp">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/File-Explorer-fluent-icon.png" alt="">
-            </ol>
-            <ol class="Time">
-                &nbsp;&nbsp;&nbsp;11:30 
+            <div class="Hora">
+                &nbsp;&nbsp;&nbsp;11:30 <br>
                 4/05/2022
-            </ol>
-        </div>
-    </div>
 
-    <script src="./js/Main.js"></script>
+            </div>
+
+            <!--SECCIÓN DE TABLERO DE INICIO W-->
+            <div class="Tablero" id="Tablero">
+                <div class="Despliegue">
+                    <div>
+                       <img src="https://img.icons8.com/ios-glyphs/60/ffffff/test-account.png" alt="">
+                    </div>
+                    <div>
+                       <img src="https://img.icons8.com/windows/64/ffffff/law-document-.png" alt="">
+                    </div>
+                    <div>
+                       <img src="https://img.icons8.com/ios/100/ffffff/image.png" alt="">
+                    </div>
+                    <div>
+                       <img src="https://img.icons8.com/small/32/ffffff/gear.png" alt="">
+                    </div>
+                    <div>
+                       <img src="https://img.icons8.com/ios-glyphs/60/ffffff/shutdown--v1.png">
+                    </div>
+                </div> 
+                <div class="Sub-tittle">
+                    <div>Usuario</div>
+                    <div>Documentos</div>
+                    <div>Imágenes</div>
+                    <div>Configuración</div>
+                    <div>Inicio / Apagado</div>                    
+                </div>
+            </div>       
+        </div>
+        <!--SECCIÓN VENTANA DE CARPETA-->       
+        <div class="Window" id="Window">
+            <div class="Top">
+                <div>
+                    Archivos
+                </div>
+                <div>
+                    <div class="Close2">
+                        <img src="https://img.icons8.com/fluency-systems-filled/96/ffffff/x.png" onclick="CloseWindow();">
+                    </div>
+                    <div>
+                        <img src="https://img.icons8.com/material-outlined/48/ffffff/maximize-window.png" id="maximizar" onclick="maximizar();">
+                    </div>
+                    <div>
+                        <img  src="https://img.icons8.com/material-outlined/48/ffffff/maximize-window.png" class="Max" id="Max" onclick="minimizar();" >
+                    </div>
+                    <div>
+                        <img src="https://img.icons8.com/ios-glyphs/60/ffffff/minus-math.png" onclick="CloseWindow();">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+    </div>
+    <script src="js/Main.js" type="text/javascript"></script>  
 </body>
 </html>

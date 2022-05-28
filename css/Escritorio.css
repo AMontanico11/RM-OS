@@ -4,55 +4,209 @@ body {
     display: flex;
     justify-content: center;
 }
-.Fondo-escritorio {
-    margin-top: 4rem;
+.Fondo {
+    margin-top: 1rem;
     width: 100rem;
-    height: 55rem;
+    height: 40rem;
 }
-.Fondo-escritorio img {
-    width: 100%;
-    height: 100%;
+.Fondo .segundo {
+    width: 60rem;
+    height: 30rem;
 }
-.barra-T{
+.Barra-T{
     width: 100rem;
     height: 50px;
     background-color: black;
-    margin-top: -5rem;
-position: fixed;
-}
-.barra-T {
-    display: flex;
-    flex-direction: row;
-}
-.barra-T ol{
-    width: 50px;
-    height: 50px;
-    background-color: #5D5F61;
-}
-.barra-T ol img{
-    padding: 0.4rem;
-}
-.barra-T .SecA{
-    margin-left: 1rem;
-}
-.barra-T .Carp{
-    margin-left: 2rem;
-    background-color: black;
-}
-.barra-T .Time{
-    background-color: black;
-    margin-left: 71rem;
-    color: white;
-    padding: 1rem;
-    font-size: 1.5rem;
+    margin-top: 29rem;
+
 }
 
-.Carpeta1{
-    width: 80px;
-    height: 80px;
-    margin-top: -30rem;
+.Barra-T{
+    width: 60rem;
+    background-color: black;
     position: absolute;
-    margin-left: 2rem;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+img{
+    width: 24px;
+    height: 24px;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.windowsIcon{
+    width: 2.4rem;
+    height: 3rem;
+    margin-left: 1rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.windowsIcon2{
+    width: 2.4rem;
+    height: 3rem;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    display: none;
+}
+.Lupa {
+    width: 2.8rem;
+    height: 3rem;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.Lupa:hover{
+    background-color: #5D5F61;
+    transition: 0.1s;
+}
+.Carpeta {
+    width: 2.8rem;
+    height: 3rem;
+    margin-right: 50rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.CarpetaS{
+    width: 2.8rem;
+    height: 3rem;
+    margin-right: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    cursor: pointer;
+}
+.windowsIcon:hover{
+    background-color: #5D5F61;
+    transition: 0.1s;
+}
+.windowsIcon2:hover{
+    background-color: #5D5F61;
+    transition: 0.1s;
+}
+.CarpetaS:hover{
+    background-color: #5D5F61;
+    transition: 0.1s;
+}
+.Carpeta:hover{
+    background-color: #5D5F61;
+    transition: 0.1s;
+}
+.Search{
+    height: 10rem;
+    width: 12rem;
+    margin-top: 10rem;
+    margin-left: 10rem;
+
+    position: absolute;
+    background-color: grey;
+    display: none;
+}
+.Buscador{
+    width: 2.8rem;
+    background-color:black;
     color: white;
-    font-size: 1.1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Tablero{
+    height: 16rem;
+    width: 12rem;
+    margin-top: 10rem;
+    margin-right: 48rem;
+
+    position: absolute;
+    background-color: #262626;
+    display: none;
+}
+.activar{
+    display: flex;
+}
+.desactivar{
+    display: none;
+}
+.actApagar{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    
+}
+.activar2{
+    display: block;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Despliegue{
+    width: 2.8rem;
+    background-color:black;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Despliegue div{
+    width: 2.4rem;
+    height: 3rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Despliegue img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.Despliegue:hover{
+    background-color: #5D5F61;
+    transition: 0.1s;
+}
+.Sub-tittle:hover{
+    background-color: #5D5F61;
+    transition: 0.1s;
+}
+.Sub-tittle{
+    width: 100%;
+    height: 100%;
+    font-size: small;
+}
+.Sub-tittle div{
+    height: 3rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+.Hora{
+    margin-left: 53rem;
+    margin-top: 29rem;
+    font-size: small;
+    color: white;
+    position: absolute;
 }
